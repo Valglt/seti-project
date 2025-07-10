@@ -1,0 +1,196 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+/* Fond spatial + effet CRT */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #00FF00;
+  font-family: 'Orbitron', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  user-select: none;
+  overflow: auto;
+  position: relative;
+  width: 100%;
+}
+
+
+
+canvas {
+display: block;
+position:absolute;
+top:0;
+left:0;
+}
+
+/* Effet scanlines CRT */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 0, 0.05),
+    rgba(0, 255, 0, 0.05) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  z-index: 1000;
+}
+
+/* Canvas en arrière-plan */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+nav a {
+    color: #39FF14;
+    text-decoration: none;
+    font-style: italic;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* En-tête */
+header {
+  background-color: #001a00;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #00FF00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Horloge */
+#horloge {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #39FF14;
+}
+
+/* Titres */
+h1, h2 {
+  text-align: center;
+  color: #00FF00;
+  text-shadow: 0 0 5px #00FF00;
+  letter-spacing: 2px;
+}
+
+
+
+.mainLogin {
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainAdmin {
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+hr {
+    width:  500px;
+}
+
+/* Formulaire */
+.formLogin {
+    min-width: 45%;
+    max-width: 450px;
+  margin: 50px auto;
+  background-color: #001a00;
+  padding: 20px;
+  border: 2px solid #00FF00;
+  box-shadow: 0 0 15px #00FF00;
+  align-self: center;
+  justify-self: center;
+}
+
+.formAdmin {
+        min-width: 45%;
+    max-width: 450px;
+  margin: 20px auto;
+  background-color: #001a00;
+  padding: 20px;
+  border: 2px solid #00FF00;
+  box-shadow: 0 0 15px #00FF00;
+  align-self: center;
+  justify-self: center;
+}
+
+.divFormAdmin {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+input, button, textarea, select {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #000;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  font-family: 'Orbitron', monospace;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 0 5px #00FF00;
+  transition: background 0.2s;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #39FF14;
+  opacity: 0.6;
+}
+
+input:focus, textarea:focus {
+  background-color: #002200;
+}
+
+button {
+  cursor: pointer;
+  background-color: #001a00;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #00FF00;
+  color: #000;
+  text-shadow: none;
+}
+
+

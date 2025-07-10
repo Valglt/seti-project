@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr" itemscope itemtype="https://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Projet SETI – Simulation d’Envoi de Signaux vers l’Espace</title>
+    <meta name="description" content="Simulez l’envoi de signaux vers des planètes dans l’univers. Le Projet SETI vous permet d'explorer les étoiles et d'imaginer un premier contact extraterrestre.">
+    <meta name="author" content="Valentin GUERAULT">
+    <meta name="robots" content="index">
+    <meta name="keywords" content="SETI, espace, signaux, simulation, extraterrestre, planète, contact, projet SETI, univers, astronomie, science">
+    <link rel="canonical" href="https://projet-seti.valentinguerault.fr/">
+
+    <!-- Open Graph (Facebook & LinkedIn) -->
+    <meta property="og:title" content="Projet SETI – Simulation de Signaux Interstellaires">
+    <meta property="og:description" content="Envoyez des signaux vers des planètes lointaines avec cette simulation SETI éducative.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://projet-seti.valentinguerault.fr/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projet SETI – Simulation de Signaux Interstellaires">
+    <meta name="twitter:description" content="Découvrez si une vie extraterrestre répondra à vos signaux.">
+
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="icon" type="image/png" href="public/images/favicon-16x16.png">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Russo+One&display=swap');
+    </style>
+
+    <!-- JSON-LD (données structurées) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Projet SETI",
+      "url": "https://projet-seti.valentinguerault.fr/",
+      "description": "Simulation interactive d’envoi de signaux vers des planètes lointaines. Projet pédagogique de Valentin Guerault.",
+      "author": {
+        "@type": "Person",
+        "name": "Valentin GUERAULT",
+        "url": "https://valentinguerault.fr"
+      },
+      "inLanguage": "fr"
+    }
+    </script>
+</head>
+
+<body class="indexBody" itemscope itemtype="https://schema.org/WebPage">
+    <canvas></canvas>
+
+    <header class="indexHeader" itemscope itemtype="https://schema.org/WPHeader">
+        <h1 itemprop="headline">Projet SETI</h1>
+        <div id="horloge" aria-label="Heure actuelle">--:--:--</div>
+    </header>
+
+    <main class="indexMain" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
+        <h2 class="titre" itemprop="about">Bienvenue sur le Projet SETI</h2>
+
+        <section class="sectionRecherchePlanete" itemscope itemtype="https://schema.org/SearchAction">
+            <meta itemprop="target" content="https://valentinguerault.fr/seti?planete_id={planete_id}">
+            <h3 itemprop="name">Sélectionnez une planète</h3>
+
+            <div class="divSignal">
+                <select name="planete_id" id="selectPlanets" required itemprop="query-input">
+                    <option value="" disabled selected hidden>Envoyer un signal</option>
+                </select>
+                <div class="resultatSignal" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="indexFooter" itemscope itemtype="https://schema.org/WPFooter">
+        <p>&copy; <span itemprop="copyrightHolder">Valentin GUERAULT</span></p>
+        <a href="https://valentinguerault.fr/" itemprop="url">https://valentinguerault.fr/</a>
+    </footer>
+
+    <script src="public/js/public.js"></script>
+</body>
+</html>
