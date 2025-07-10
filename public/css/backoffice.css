@@ -157,6 +157,12 @@ hr {
     align-items: center;
     height: 100%;
 }
+
+.divFormAdmin h3 {
+  text-align: center;
+}
+
+
 input, button, textarea, select {
   display: block;
   width: 100%;
@@ -194,3 +200,35 @@ button:hover {
 }
 
 
+@media (max-width: 1024px) {
+  .divFormAdmin {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .divFormAdmin {
+    width: 70%;
+  }
+
+   .formLogin {
+    min-width: unset;
+    max-width: unset;
+    width: 70%;
+  }
+
+  .divFormAdmin form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .divFormAdmin {
+    width: 80%;
+  }
+
+  .formLogin {
+    width: 80%;
+  }
+
+}
