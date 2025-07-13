@@ -3,21 +3,9 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://projet-seti.valentinguerault.fr/index.html</loc>
+    <loc>https://projet-seti.valentinguerault.fr/</loc>
     <lastmod>2025-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://projet-seti.valentinguerault.fr/login.php</loc>
-    <lastmod>2025-07-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-    <url>
-    <loc>https://projet-seti.valentinguerault.fr/dashboard.php</loc>
-    <lastmod>2025-07-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
   </url>
 </urlset>
