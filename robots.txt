@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /login.php
-Disallow: /dashboard.php
-Disallow: /backoffice/
+Disallow: /backoffice/dashboard.php
+Allow: /
 
-Sitemap: https://projet-seti.valentinguerault.fr/sitemap.xml
+Sitemap: https://projet-seti.valentinguerault.fr/sitemap-seti.xml
